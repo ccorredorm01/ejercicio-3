@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORMULARIO</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Entrevista de trabajo">
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.png">
+</head>
+
+<body>
+    <h1>FORMULARIO</h1>
+    <p>Rellene el siguiente formulario respondiendo a las preguntas. Los datos serán tomados en cuenta a la hora de
+        evaluar para la entrevista de trabajo.</p>
+    <form action="registrardatos.php" method="post">
+        Nombre:
+        <br><input type="text" name="nombre" size="30"><br>
+      
+        Edad:
+        <br><input type="number" name="edad" size ="30"><br>
+        
+        Sexo:
+        <br><input type="text" name="sexo" size="30"><br>
+
+        Gmail:
+        <br><input type="text" name="mail" size="50"><br>
+
+        Seleccione los idiomas que además del español habla con fluidez:
+        <br>
+            <input type="checkbox" name="java">Inglés<br>
+            <input type="checkbox" name="cmasmas">Francés<br>
+            <input type="checkbox" name="c">Alemán<br>
+            <input type="checkbox" name="csharp">Otro<br>
+
+        Comentarios:
+        <br>
+            <textarea name="comentarios" rows="5" cols="60"></textarea> 
+        <br>
+
+
+
+
+        <input type="submit" value="Enviar datos">
+    </form>
+
+
+
+
+</body>
+
+
+
+
+</html>
