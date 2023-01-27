@@ -10,46 +10,64 @@
 </head>
 
 <body>
-    <h1>FORMULARIO</h1>
+    <div id="cabecera">
+        <p>FORMULARIO</p>
+    </div>
+
     <p>Rellene el siguiente formulario respondiendo a las preguntas. Los datos serán tomados en cuenta a la hora de
         evaluar para la entrevista de trabajo.</p>
     <form action="registrardatos.php" method="post">
         Nombre:
         <br><input type="text" name="nombre" size="30"><br>
-      
+
         Edad:
-        <br><input type="number" name="edad" size ="30"><br>
-        
+        <br><input type="number" name="edad" size="30"><br>
+
         Sexo:
         <br><input type="text" name="sexo" size="30"><br>
 
         Gmail:
         <br><input type="text" name="mail" size="50"><br>
 
-        Seleccione los idiomas que además del español habla con fluidez:
+        Además del español, ¿qué idiomas habla con fluidez?
         <br>
-            <input type="checkbox" name="inglés">Inglés<br>
-            <input type="checkbox" name="francés">Francés<br>
-            <input type="checkbox" name="alemán">Alemán<br>
-            <input type="checkbox" name="otro">Otro<br>
+        <input type="checkbox" name="inglés">Inglés<br>
+        <input type="checkbox" name="francés">Francés<br>
+        <input type="checkbox" name="alemán">Alemán<br>
+        <input type="checkbox" name="otro">Otro<br>
 
         Comentarios:
         <br>
-            <textarea name="comentarios" rows="5" cols="60"></textarea> 
+        <textarea name="comentarios" rows="5" cols="60"></textarea>
         <br>
-        
+
         Seleccione la formación de estudios que posee:
         <input type="radio" name="estudios" value="secundario">Secundario<br>
         <input type="radio" name="estudios" value="universitario">Universitario<br>
         <input type="radio" name="estudios" value="formación profesional">Formación profesional<br>
         <input type="radio" name="estudios" value="sin estudios">Sin estudios<br>
 
+       ¿De dónde es? Seleccione su país:
+        <select name="pais">
+            <option value="1">España</option>
+            <option value="2">Otra región de Europa</option>
+            <option value="3">Norteamçerica</option>
+            <option value="4">Sudamérica</option>
+            <option value="5">Otro</option>
+        </select>
 
 
+        <br>
+        <button type="submit">Enviar<img src="enviar.png" alt="envio"></button>
+        <button type="reset">Borrar<img src="borrar.png" alt="borrado"></button>
 
-        <input type="submit" value="Enviar datos">
     </form>
-
+    <br>
+    <div id="pie">
+        <marquee>
+            <p>Gracias por su atención, mantendremos correspondencia si nos interesa.</p>
+        </marquee>
+    </div>
 
 
 

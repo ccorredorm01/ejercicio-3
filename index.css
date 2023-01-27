@@ -1,0 +1,31 @@
+/*index.css*/
+html {
+    background-color:lavender ;
+}
+
+body {
+    margin: 5em;
+    text-align: justify;
+    font-family: 'Times New Roman';
+    font-size: 18px;
+}
+
+#cabecera {
+    background-color:steelblue;
+    color:aliceblue;
+    height: 55px;
+    font-size: 45px;
+}
+
+#pie {
+    background-color:steelblue;
+    color:aliceblue;
+    height:50px;
+    text-align: 20px;
+}
+
+div {
+    text-align: center;
+}
+
+
