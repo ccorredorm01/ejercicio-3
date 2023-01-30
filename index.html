@@ -17,56 +17,96 @@
     <p>Rellene el siguiente formulario respondiendo a las preguntas. Los datos serán tomados en cuenta a la hora de
         evaluar para la entrevista de trabajo.</p>
     <form action="registrardatos.php" method="post">
-        Nombre:
-        <br><input type="text" name="nombre" size="30"><br>
+        <fieldset>
+            <legend>Datos personales</legend>
+            1. Nombre y Apellidos:
+            <br><input type="text" name="nombre" size="30"><br>
 
-        Edad:
-        <br><input type="number" name="edad" size="30"><br>
+            2. Fecha de nacimiento:
+            <br><input type="text" name="fechanacimiento" size="12"><br>
 
-        Sexo:
-        <br><input type="text" name="sexo" size="30"><br>
+            3. Sexo:
+            <br><input type="text" name="sexo" size="30"><br>
 
-        Gmail:
-        <br><input type="text" name="mail" size="50"><br>
+            4. Para poder contactar con usted, déjenos su dirección de e-mail:
+            <br><input type="text" name="mail" size="50"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Preguntas</legend>
+            5. Además del español, ¿qué idiomas habla con fluidez?
+            <br>
+            <input type="checkbox" name="inglés">Inglés<br>
+            <input type="checkbox" name="francés">Francés<br>
+            <input type="checkbox" name="alemán">Alemán<br>
+            <input type="checkbox" name="otro">Otro<br>
 
-        Además del español, ¿qué idiomas habla con fluidez?
-        <br>
-        <input type="checkbox" name="inglés">Inglés<br>
-        <input type="checkbox" name="francés">Francés<br>
-        <input type="checkbox" name="alemán">Alemán<br>
-        <input type="checkbox" name="otro">Otro<br>
+            6. Seleccione la formación de estudios que posee:
+            <br>
+            <input type="radio" name="estudios" value="secundario">Secundario<br>
+            <input type="radio" name="estudios" value="universitario">Universitario<br>
+            <input type="radio" name="estudios" value="formación profesional">Formación profesional<br>
+            <input type="radio" name="estudios" value="sin estudios" disabled>Sin estudios<br>
 
-        Comentarios:
-        <br>
-        <textarea name="comentarios" rows="5" cols="60"></textarea>
-        <br>
+            7. ¿De dónde es? Seleccione su país:
+            <select name="pais">
+                <option value="1">España</option>
+                <option value="2">Francia</option>
+                <option value="3">Italia</option>
+                <option value="4">Alemania</option>
+                <option value="5">Reino Unido</option>
+                <option value="6">Rumania</option>
+                <option value="7">Noruega</option>
+                <option value="8">México</option>
+                <option value="9">Colombia</option>
+                <option value="10">Cuba</option>
+                <option value="11">Chile</option>
+                <option value="13">Perú</option>
+                <option value="14">Ecuador</option>
+                <option value="15">Otro</option>
+            </select><br>
+        </fieldset>
+        <fieldset>
+            <legend>Háblenos de usted</legend>
+            8. Todos tenemos alguna fortaleza, seleccione con objetividad qué habilidades posee:
+            <br>
+            <input type="checkbox" name="redacción">Buena redacción.<br>
+            <input type="checkbox" name="organización">Organización.<br>
+            <input type="checkbox" name="liderazgo">Liderazgo.<br>
+            <input type="checkbox" name="negocios">Negociar.<br>
+            <label for="comentarios">Otras habilidades:</label><br>
+            <textarea name="comentarios" rows="5" cols="60"></textarea><br>
 
-        Seleccione la formación de estudios que posee:
-        <input type="radio" name="estudios" value="secundario">Secundario<br>
-        <input type="radio" name="estudios" value="universitario">Universitario<br>
-        <input type="radio" name="estudios" value="formación profesional">Formación profesional<br>
-        <input type="radio" name="estudios" value="sin estudios">Sin estudios<br>
+            9. El futuro es algo incierto, pero siempre tenemos grandes expectativas, ¿cómo te ves en cinco años? 
+            <br>
+            <textarea name="expectativas" rows="5" cols="60"></textarea>
+            <br>
 
-       ¿De dónde es? Seleccione su país:
-        <select name="pais">
-            <option value="1">España</option>
-            <option value="2">Francia</option>
-            <option value="3">Italia</option>
-            <option value="4">Alemania</option>
-            <option value="5">Reino Unido</option>
-            <option value="6">Rumania</option>
-            <option value="7">Noruega</option>
-            <option value="8">México</option>
-            <option value="9">Colombia</option>
-            <option value="10">Cuba</option>
-            <option value="11">Chile</option>
-            <option value="13">Perú</option>
-            <option value="14">Ecuador</option>
-            <option value="15">Otro</option>
-        </select>
+            10. Para cualquier trabajo es fundamental saber estar con los compañeros, ¿sabe trabajar en equipo?
+            <br>
+            <input type="radio" name="estudios" value="sí">Sí.<br>
+            <input type="radio" name="estudios" value="regular">Depende.<br>
+            <input type="radio" name="estudios" value="no">No, trabajo mejor solo.<br>
 
+            11. Por último, ¿por qué quiere trabajar aquí? Argumente brevemente las razones por las que 
+            quiere trabajar con nosotros:
+            <br>
+            <textarea name="razones" rows="5" cols="60"></textarea>
+            <br>
+        </fieldset>
 
-        <br>
+        Adjunte su curriculum:
+        <input type="file" name="foto">
+
+        <fieldset>
+            <legend>Sugerencias</legend>
+            Si tiene alguna sugerencia acerca de cómo mejorar este formulario, por favor deja un 
+            comentario:<br>
+            <label for="comentarios">Comentarios:</label><br>
+            <textarea name="comentarios" rows="5" cols="60"></textarea>
+            <br>
+
+        </fieldset>
+
         <button type="submit">Enviar<img src="enviar.png" alt="envio"></button>
         <button type="reset">Borrar<img src="borrar.png" alt="borrado"></button>
 
